@@ -1,0 +1,92 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    font-family: arial;
+    font-size: 18px;
+    color: #514e4c;
+}
+h2{
+    text-align: left;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+
+}
+/*****     audio div     *****/
+#audio{
+    width: 140px;
+    height: 180px;
+    background-color: #b0b0b2;
+}
+
+/*****     headphone icon     *****/
+#headphone{
+    width: 64px;
+    height: 64px;
+    float: left;
+    margin: 20px 38px;
+    background-repeat: no-repeat;
+    background-image: url("../images/headphone.png");
+}
+
+/*****     audio & countdown     *****/
+#countdown_audio{
+    float: left;
+}
+
+/*****     play & pause    *****/
+#click, #pause{
+    width: 26px;
+    height: 30px;
+    cursor:pointer;
+    float: left;
+    margin: 0 22px 15px 20px;
+    background-repeat: no-repeat;
+}
+#click{
+    background-image: url("../images/play.png");
+}
+#pause{
+    background-image: url("../images/pause.png");
+} 
+
+/*****     timer     *****/
+.timer_p{
+    font-size: 23px;
+    float: left;
+    margin-left: 20px;
+}
+#timer{
+    font-size: 23px;
+}
+
+/*****     text button     *****/
+span.tekst{
+    padding: 8px;
+    float: left;
+    width: 124px;
+    background-color: #514e4c;
+    margin: 4px auto;
+}
+span.tekst p{
+    color: #b0b0b2;
+    text-align: center;
+}
+
+/*****     text block     *****/
+#info_block {
+    width: 380px;
+    padding: 20px;
+    text-align: center;
+    background-color: #b0b0b2;
+    display: none;
+    margin: 0px 0 0 160px;
+}
+#info_block p{
+    font-size: 15px;
+    text-align: left;
+}
+

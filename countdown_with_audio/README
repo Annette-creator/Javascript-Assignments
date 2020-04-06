@@ -1,0 +1,112 @@
+Audio Countdown - Count down with audio and text toggle
+-------------------------------------------------------
+
+The countdown with a play, pause button and audio is easy to use when you only need one audio element in your website. Your audio starts when you click Play and pauses itself. When you click on "Toon tekst" there will be a block with text fade.
+
+* Easy to use
+* Minimal css
+* Customizable
+
+
+Build with
+----------
+* Html5
+* css3
+* Javascript
+
+
+Contents
+--------
+	- Packages
+		- Index.html
+		- Css map
+			style.css
+		- Js map
+			javascript.js
+		- Images map
+			headphone.png
+			pause.png
+			play.png
+		- Fonts map
+			SourceSansPro-Semibold.ttf
+		- Audio map
+			audio.mp3
+		- README
+
+Live demo at: http://i344408.iris.fhict.nl/portfolio/bewijslast/dev/countdown/index.html
+
+
+Installation
+------------
+
+All styling is done using CSS so you'll want to include the Audio Countdown CSS in your head.
+
+	<link rel="stylesheet" href="css/style.css" type="text/css" rel="stylesheet" />
+
+Be aware that Audio Countdown uses very unspecific CSS selectors to help you overwrite every aspect. This means in turn, that if you're not following a modularized approach to write CSS and have many global and specific definitions (read ID's and such – which you shouldn't), these definitions can break the Audio Countdown styling.
+
+Audio Countdown requires jQuery version 1.7.0 or higher. It's recommended to include the javascript at the bottom of the page before the closing `</body>` tag.
+
+	<script src="js/javascript.js" type="text/javascript" charset="utf-8></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+
+Usage
+-----
+
+In your container you have a div called audio (<div id="audio">). 
+The div contains the follow up:
+	- an icon of the headphone 
+		<div id="headphone"></div>
+
+	- a div with:
+		- your audio file
+			<audio id="myAudio">
+				<source src="audio/audio.mp3" type="audio/mpeg">
+			</audio>
+
+		- buttons to turn on the timer
+			<div id="click" onclick="playAudio()" type="button"></div>
+			<div id="pause" onclick="pauseAudio()" type="button"></div> 
+
+		- the timer
+			<div id="click" onclick="playAudio()" type="button"></div>
+			<div id="pause" onclick="pauseAudio()" type="button"></div> 
+			<p class="timer_p">00:</p>
+			<span class="seconds timer" id="timer"></span>
+
+	- span for the text block
+		<span id="handle" class="tekst">
+
+		- button to show block
+		<p id="toon" onclick="toon_tekst()">Toon tekst</p>
+
+	- the text block you will show
+		<div id="info_block">
+
+
+If you want to change the time, for example 40 seconds. Go to the javascript file and change in count (line 2) the number.
+Example:
+count = 60; will be: count = 40;
+
+
+Support
+-------
+
+For questions or if you are having issues let me know! Please use annettevanes@hotmail.com and use the `Audio CountDown` as your subject.
+
+## Reporting bugs and issues
+
+If you believe you've found a bug, please contact me annettevanes@hotmail.com and use the 'I've found a bug Audio CountDown' as your subject.
+
+Version 1.0
+
+Author
+-------
+Annette van Es - Fontys college student
+
+
+License
+-------
+
+The project is licensed under Annette van Es

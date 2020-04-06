@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  	<meta charset="UTF-8">
+	  	<title>Audio Countdown</title>
+	    <link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body>
+		<container>
+			<div id="audio">
+				<div id="headphone"></div>
+				<div id="countdown_audio">
+					<audio id="myAudio">
+						<source src="audio/audio.mp3" type="audio/mpeg">
+					</audio>
+					<div id="click" onclick="playAudio()" type="button"></div>
+					<div id="pause" onclick="pauseAudio()" type="button"></div> 
+					<p class="timer_p">00:</p>
+					<span id="timer"></span>
+				</div>
+
+				 <span id="handle" class="tekst">
+				 	<p id="toon" onclick="toon_tekst()">Toon tekst</p>
+				 </span> 
+
+				 <div id="info_block">
+				 	<h2>Een versterker</h2>
+				    <p>Gehoorverlies wordt gemeten bij verschillende frequenties (toonhoogten) en is over het algemeen ook per frequentie verschillend. Een hoortoestel kan gehoorverlies compenseren door afzonderlijke versterkingen van de lage tonen, middentonen en hoge tonen dat noemen ze toonregeling. Hiervoor beschikken de meeste hoortoestellen over meerdere kanalen of banden. In deze kanalen of banden kan de versterking en bewerking van het geluid worden ingesteld op uw individuele gehoorverlies. </br></br>
+
+					Het meest eenvoudige hoortoestel heeft één kanaal dat alle toonhoogten even hard versterkt. Hierin kan het geluid slechts zeer beperkt worden bijgesteld. Toestellen met meerdere kanalen bieden betere en uitgebreidere mogelijkheden om het geluid af te stemmen op uw gehoorverlies. Overigens is een hoortoestel niet beter naarmate het meer kanalen heeft. Het oor heeft niet oneindig veel kanalen nodig.</p>
+				</div>
+			</div>
+		</container>
+
+    <script src="js/javascript.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</body>
+</html>
